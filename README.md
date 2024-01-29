@@ -4,6 +4,7 @@ Práctica de clase conjunta , consiste en realizar una asociación conjunta junt
 Integrantes de la web:
  Marcos Beas Sánchez
  Emilio García Abad
+ Diego Martín Pérez
 
  Temática: 
  Asociacion de VideoJuegos: (Games ME)
