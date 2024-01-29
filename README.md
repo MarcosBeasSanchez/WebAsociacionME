@@ -6,6 +6,6 @@ Integrantes de la web:
  Emilio García Abad
 
  Temática: 
- Asociacion de VideoJuegos: (ME Games)
+ Asociacion de VideoJuegos: (Games ME)
 
  
