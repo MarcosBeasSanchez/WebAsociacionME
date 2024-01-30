@@ -1,0 +1,70 @@
+
+* {
+    box-sizing: border-box;  /* Esto  es para que no haya desbordamientos horizontalmete*/
+}
+
+html{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+}
+
+body {
+   
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4059b9;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+nav a {
+    display: inline-block; 
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    font-family: 'Poppins', sans-serif;
+    color: #4059b9;
+}
+
+main{
+    padding: 20px;
+}
+
+footer {
+    font-size: 10pt;
+    background-color: #292929;
+    color: white;
+    text-align: right;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+footer a {
+    color: #5372f0;
+    text-decoration: none;
+}
+
+ footer a:hover {
+    color: white; /* Cambia este valor cuando el mouse está sobre el enlace */
+    
+}
+
+footer a:visited {
+    color: #93a5ee; /* Cambia este valor para enlaces visitados */
+    
+}
