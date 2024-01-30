@@ -41,7 +41,37 @@ nav a:hover {
 }
 
 main{
-    padding: 20px;
+    display: inline-block;
+    position: absolute;
+}
+
+#formu{
+    display: block;
+    justify-content: center;
+    margin: auto;
+    border: 2px;
+    padding-top: 10px;
+    font-size: 16px;
+    margin-left: 50%;
+    margin-top: 30px;
+    box-shadow: 10px 10px 10px #ddd;
+    background-color: #f2f2f2;
+    width: 1000px;
+    height: auto;
+}
+
+#botones{
+    margin-left: 40%;
+
+}
+
+.tl{
+    padding-right: 10px;
+    width: 1px;
+}
+
+b{
+    font-size: 12px;
 }
 
 footer {
