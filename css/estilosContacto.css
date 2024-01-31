@@ -44,13 +44,29 @@ main{
     padding: 20px;
 }
 
+.foto {
+    width: 650px;
+    height: 400px;
+    margin-left: 25px;
+}
+
+.logoLinkedin {
+    width: 25px;
+    height: 25px;
+    margin-left: 25px;
+    margin-top: 16px;
+}
+
+#nombre {
+    display: flex;
+}
+
 footer {
     font-size: 10pt;
     background-color: #292929;
     color: white;
     text-align: right;
     padding: 20px;
-    position: absolute;
     bottom: 0;
     width: 100%;
 }
