@@ -103,8 +103,18 @@
                         </tr>
                         <tr>
                             <td colspan="2">
+                                <div id="capcha">
+                                    <a>Prueba de Robots: </a>
+                                    <script src="javaRegistro.js" type="text/JavaScript"></script>
+                                    <input id="codigoInput" placeholder="Escribe el codigo de arriba">
+                                    
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
                                 <div id="botones">
-                                    <input type="submit" value="Enviar">
+                                    <input type="submit" value="Enviar" onclick="verificarCodigo()">
                                     <input type="reset" value="Reinicio">
                                 </div>
                             </td>
