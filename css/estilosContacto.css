@@ -57,8 +57,31 @@ main{
     margin-top: 16px;
 }
 
+.correoPersonal {
+    margin-left: 15px;
+    margin-top: 16px;
+}
+
 #nombre {
     display: flex;
+}
+
+#formu{
+    display: block;
+    justify-content: center;
+    margin: auto;
+    border: 2px;
+    padding-top: 10px;
+    font-size: 16px;
+    margin-top: 30px;
+    box-shadow: 10px 10px 10px #ddd;
+    background-color: #f2f2f2;
+    width: 500px;
+    height: auto;
+}
+
+#botones{
+    margin-left: 40%;
 }
 
 footer {
@@ -77,10 +100,8 @@ footer a {
 
  footer a:hover {
     color: white; /* Cambia este valor cuando el mouse está sobre el enlace */
-    
 }
 
 footer a:visited {
     color: #93a5ee; /* Cambia este valor para enlaces visitados */
-    
 }
