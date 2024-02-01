@@ -39,7 +39,7 @@
     <main>
         <center>
             <div id="formu">
-                <form action="admin@asociacion.org" method="post" target="_blank">
+                <form action="MAILTO:admin@asociacion.org" method="post" onsubmit="return verificarCodigo()" target="_blank">
                     <table>
                         <tr>
                             <td class="tl"><label for="Nombre">Nombre: *</label></td>
@@ -104,22 +104,23 @@
                         <tr>
                             <td colspan="2">
                                 <div id="capcha">
-                                    <a>Prueba de Robots: </a>
-                                    <script src="javaRegistro.js" type="text/JavaScript"></script>
+                                    <label for="codigoInput">Prueba de Robots:</label>
                                     <input id="codigoInput" placeholder="Escribe el codigo de arriba">
-                                    
+                                    <script src="javaRegistro.js"></script>
+
                                 </div>
                             </td>
                         </tr>
                         <tr>
                             <td colspan="2">
                                 <div id="botones">
-                                    <input type="submit" value="Enviar" onclick="verificarCodigo()">
+                                    <input type="submit" value="Enviar" onclick="mostrarInformacion()">
                                     <input type="reset" value="Reinicio">
                                 </div>
                             </td>
                         </tr>
                         <tr>
+                        
                             <td><b>(Obligatorios los *)</b></td>
                         </tr>
                     </table>
