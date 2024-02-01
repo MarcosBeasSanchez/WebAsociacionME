@@ -23,29 +23,36 @@ function verificarCodigo() {
 }
 
 function mostrarInformacion() {
-    var nombre = document.getElementsByName('Nombre')[0].value;
-    var apellidos = document.getElementsByName('Apellidos')[0].value;
-    var documento = document.getElementsByName('Documento')[0].value;
-    var correo = document.getElementsByName('Correo')[0].value;
-    var estadoCivil = document.getElementsByName('EstadoCivil')[0].value;
     var telefono = document.getElementsByName('Telefono')[0].value;
-    var dias = obtenerDiasSeleccionados();
-    var motivacion = obtenerMotivacionSeleccionada();
-    var motivacionOtro = document.getElementsByName('MotivacionOtro')[0].value;
-    var observaciones = document.getElementsByName('Observaciones')[0].value;
-    
-    var informacion = "Nombre: " + nombre +
-                      "\nApellidos: " + apellidos +
-                      "\nNúmero de Identificación: " + documento +
-                      "\nCorreo Electrónico: " + correo +
-                      "\nEstado Civil: " + estadoCivil +
-                      "\nTeléfono: " + telefono +
-                      "\nDisponibilidad: " + dias +
-                      "\nMotivación: " + motivacion +
-                      "\nMotivación (Otros): " + motivacionOtro +
-                      "\nObservaciones: " + observaciones;
 
-    alert(informacion);
+    if (telefono.length >= 9) {
+        var nombre = document.getElementsByName('Nombre')[0].value;
+        var apellidos = document.getElementsByName('Apellidos')[0].value;
+        var documento = document.getElementsByName('Documento')[0].value;
+        var correo = document.getElementsByName('Correo')[0].value;
+        var estadoCivil = document.getElementsByName('EstadoCivil')[0].value;
+        var dias = obtenerDiasSeleccionados();
+        var motivacion = obtenerMotivacionSeleccionada();
+        var motivacionOtro = document.getElementsByName('MotivacionOtro')[0].value;
+        var observaciones = document.getElementsByName('Observaciones')[0].value;
+
+        var informacion = "Nombre: " + nombre +
+                          "\nApellidos: " + apellidos +
+                          "\nNúmero de Identificación: " + documento +
+                          "\nCorreo Electrónico: " + correo +
+                          "\nEstado Civil: " + estadoCivil +
+                          "\nTeléfono: " + telefono +
+                          "\nDisponibilidad: " + dias +
+                          "\nMotivación: " + motivacion +
+                          "\nMotivación (Otros): " + motivacionOtro +
+                          "\nObservaciones: " + observaciones;
+
+        alert(informacion);
+        return true;
+    } else {
+        alert('La seccion telefono tiene que tener mas de 9 carracteres');
+        return false;
+    }
 }
 
 function obtenerDiasSeleccionados() {

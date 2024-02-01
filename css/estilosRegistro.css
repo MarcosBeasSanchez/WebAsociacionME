@@ -78,6 +78,12 @@ main{
     height: 50px;
     margin-left: 33%;
     font-size: 12px;
+    margin-bottom: 5px;
+}
+
+#cap{
+    width: 20px;
+    height: auto;
 }
 
 b{
@@ -108,3 +114,4 @@ footer a:visited {
     color: #93a5ee; /* Cambia este valor para enlaces visitados */
     
 }
+
