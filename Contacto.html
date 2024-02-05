@@ -16,7 +16,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!-- Estilos CSS para el INDEX -->
     <link  rel="stylesheet" href="./css/estilosContacto.css">
-    
+    <!-- JavaScript -->
+    <script src="./Contacto.js"></script>
 </head>
 <body>
 
@@ -64,7 +65,7 @@
 
         <div id="nombre">
             <P>Diego Martín Peréz</P>
-            <a href="mailto:jfdiego2005@gmail.com" class="correoPersonal">mailto:jfdiego2005@gmail.com</a></p>
+            <a href="mailto:jfdiego2005@gmail.com" class="correoPersonal">jfdiego2005@gmail.com</a></p>
         </div>
 
         <div id="nombre">
@@ -75,7 +76,7 @@
         
         <center>
             <div id="formu">
-                <form action="mailto: contactogamesme@gmail.com" method="post" target="_blank">
+                <form action="mailto: contactogamesme@gmail.com" method="post" onsubmit="return enviarInfo()">
                     <table>
                         <tr>
                             <td><b>Mandanos Un Mensaje</b></td>
@@ -83,17 +84,17 @@
 
                         <tr>
                             <td class="tl"><label for="Nombre">Nombre: *</label></td>
-                            <td><input type="text" name="Nombre" maxlength="50" required></td>
+                            <td><input id="Nombre" type="text" name="Nombre" maxlength="50" required></td>
                         </tr>
 
                         <tr>
                             <td class="tl"><label for="Correo">Correo Electrónico: *</label></td>
-                            <td><input type="email" name="Correo" required></td>
+                            <td><input id="Correo" type="email" name="Correo" required></td>
                         </tr>
 
                         <tr>
-                            <td class="tl"><label for="Mensaje">Correo Electrónico: *</label></td>
-                            <td><textarea rows="3" cols="30" placeholder="Escriba aquí su mensaje"></textarea>
+                            <td class="tl"><label for="Mensaje">Mensaje: *</label></td>
+                            <td><textarea id="Mensaje" rows="3" cols="30" placeholder="Escriba aquí su mensaje"></textarea>
                         </tr>
                         
                         <tr>
