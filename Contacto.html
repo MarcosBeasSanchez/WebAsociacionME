@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--PROTOCOLO-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- CREADOR/ES-->
+    <meta name="MarcosBeasSanchez" content="MarcosBeasSanchez">
+    <meta name="GAMES ME Contacto" content="Pagina de contacto de Games ME">
+    <title>GAMES ME Contacto</title>
+    <!-- ICONO SUPERIOR DE LA WEB-->
+    <link rel="icon" href="./Imagenes/iconoGamesME.ico" type="image/x-icon">
+    <!-- APARTADO PARA LA FUENTE POPPINS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Estilos CSS para el INDEX -->
+    <link  rel="stylesheet" href="./css/estilosContacto.css">
+    <!-- JavaScript -->
+    <script src="./js/Contacto.js"></script>
+</head>
+<body>
+
+    <!-- Cabecera con logo y título -->
+    <header>
+        <a href="index.html"><img src="./Imagenes/IconoGamesMEIndex.png" alt="Logo" height="50"></a>  
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav>
+        <a href="Registo.html">REGISTO</a>
+        <a href="QuienesSomos.html">¿QUIENES SOMOS?</a>
+        <a href="PaginaLibre1.html">RESEÑAS</a>
+    </nav>
+
+    <!-- Contenido principal de la página -->
+    <main>
+        
+        <h2>Contacta Con Nosotros</h2>
+        
+        <p>Desde el siguiente email podrás mandarnos un mensaje a la administración de nuestra asociación.</p>
+        <a href="mailto:contactogamesme@gmail.com">contactogamesme@gmail.com</a>
+        
+        <h2>Donde Estamos</h2>
+        <p>Nos encontramos en el vivero de empresas de Vicálvaro en la C/ de Villablanca, 85, Vicálvaro, 28032 Madrid</p>
+
+        <h2>Administración de Games ME</h2>
+
+        <div id="nombre">
+            <P>Marcos Beas Sanchez</P>
+            <a href="https://www.linkedin.com/in/marcos-beas-s%C3%A1nchez-985a91187/?originalSubdomain=es" target="_blank"><img class="logoLinkedin" src="./Imagenes/linkedin.png" alt="Logo de LinKedIn"></a>
+            <a href="mailto:marcosbeassanchez@gmail.com" class="correoPersonal">marcosbeassanchez@gmail.com</a></p>
+        </div>
+
+        <div id="nombre">
+            <P>Diego Martín Peréz</P>
+            <a><img class="logoLinkedin" src="./Imagenes/linkedin.png" alt="Logo de LinKedIn"></a>
+            <a href="mailto:jfdiego2005@gmail.com" class="correoPersonal">jfdiego2005@gmail.com</a></p>
+        </div>
+
+        <div id="nombre">
+            <P>Emilio García Abad</P>
+            <a href="https://es.linkedin.com/in/emilio-garc%C3%ADa-abad-6a0561258?trk=people-guest_people_search-card" target="_blank"><img class="logoLinkedin" src="./Imagenes/linkedin.png" alt="Logo de LinKedIn"></a>
+            <a href="mailto:emigarabad@gmail.com" class="correoPersonal">emigarabad@gmail.com</a></p>
+        </div>
+        
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.1538025543223!2d-3.601379523452623!3d40.40544345632533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4225432846dd8f%3A0xf79463effca3e9e!2sVivero%20de%20empresas%20de%20Vic%C3%A1lvaro!5e0!3m2!1ses!2ses!4v1706714628979!5m2!1ses!2ses" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <img class="foto" src="./Imagenes/vivero.jpeg" alt="Foto de la entrada principal del vivero de empresas de Vicálvaro">
+
+            <img class="foto" src="./Imagenes/viveroFrente.jpg" alt="Foto del edificio del vivero de empresas de Vicálvaro">
+        </div>
+
+        
+        <center>
+            <div id="formu">
+                <form action="mailto: contactogamesme@gmail.com" method="post" onsubmit="return enviarInfo()">
+                    <table>
+                        <tr>
+                            <td><b>Mandanos Un Mensaje</b></td>
+                        </tr>
+
+                        <tr>
+                            <td class="tl"><label for="Nombre">Nombre: *</label></td>
+                            <td><input id="Nombre" type="text" name="Nombre" maxlength="50" size="56" required></td>
+                        </tr>
+
+                        <tr>
+                            <td class="tl"><label for="Correo">Correo Electrónico: *</label></td>
+                            <td><input id="Correo" type="email" name="Correo"  size="56"required></td>
+                        </tr>
+
+                        <tr>
+                            <td class="tl"><label for="Mensaje">Mensaje: *</label></td>
+                            <td><textarea id="Mensaje" rows="5" cols="50" placeholder="Escriba aquí su mensaje"></textarea>
+                        </tr>
+                        
+                        <tr>
+                            <td colspan="2">
+                                <div id="botones">
+                                    <input type="submit" value="Enviar">
+                                    <input type="reset" value="Reinicio">
+                                </div>
+                            </td>
+                        </tr>
+
+                    </table>
+                </form>
+            </div>
+        </center>    
+        
+    </main>
+
+    <!-- Pie de página con datos de autor/es, enlace al IES Villablanca y contacto -->
+    <footer>
+            <p>Autor: Marcos Beas Sanchez | <a href="mailto:mbs441@educa.madrid.org">Contacto</a></p>
+            <p>Autor: Emilio Garcia Abad | <a href="mailto:emilio.garcia15@educa.madrid.org">Contacto</a></p>
+            <p>Autor: Diego Martín Peréz | <a href="mailto:diego.martin143@educa.madrid.org">Contacto</a></p>
+            <p>© 2024 IES Villablanca | <a href="https://site.educa.madrid.org/ies.villablanca.madrid/" target="_blank"> IES Villablanca</a></p>
+    </footer>
+</body>
+</html>

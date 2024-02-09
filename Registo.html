@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <!-- CREADOR/ES-->
     <meta name="MarcosBeasSanchez" content="MarcosBeasSanchez">
-    <meta name="REgistro" content="Pagina de registro de Games ME">
-    <title>GAMING ME - Registro</title>
+    <meta name="Registro" content="Pagina de registro de Games ME">
+    <title>GAMES ME Registro</title>
     <!-- ICONO SUPERIOR DE LA WEB-->
     <link rel="icon" href="./Imagenes/iconoGamesME.ico" type="image/x-icon">
     <!-- APARTADO PARA LA FUENTE POPPINS-->
@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!-- Estilos CSS para el INDEX -->
     <link  rel="stylesheet" href="css/estilosRegistro.css">
-    
+   
 </head>
 <body>
 
@@ -29,36 +29,40 @@
 
     <!-- Menú de navegación -->
     <nav>
-        <a href="index.html">PRINCIPAL</a>
+        
         <a href="Contacto.html">CONTACTO</a>
         <a href="QuienesSomos.html">¿QUIENES SOMOS?</a>
-        <a href="PaginaLibre1.html">PÁGINA LIBRE</a>
+        <a href="PaginaLibre1.html">RESEÑAS</a>
     </nav>
 
     <!-- Contenido principal de la página -->
     <main>
-        <center>
+       
             <div id="formu">
                 <form action="MAILTO:admin@asociacion.org" method="post" onsubmit="return mostrarInformacion() && verificarCodigo()">
-                    <table>
+                    <table id="tablaCentro">
                         <tr>
                             <td class="tl"><label for="Nombre">Nombre: *</label></td>
-                            <td><input type="text" name="Nombre" maxlength="50" required></td>
+                            <td><input type="text" name="Nombre" maxlength="50" size="67" required></td>
                         </tr>
                         <tr>
                             <td class="tl" ><label for="Apellidos">Apellidos: * </label></td>
-                            <td><input type="text" name="Apellidos" maxlength="50" required></td>
+                            <td><input type="text" name="Apellidos" maxlength="50" size="67" required></td>
                         </tr>
                         <tr>
                             <td class="tl"><label for="Documento">Número de Identificación: *</label></td>
-                            <td><input type="text" name="Documento" maxlength="9" required></td>
+                            <td><input type="text" name="Documento" maxlength="9" size="67"required></td>
                         </tr>
                         <tr>
                             <td class="tl"><label for="Correo">Correo Electrónico: *</label></td>
-                            <td><input type="email" name="Correo" required></td>
+                            <td><input type="email" name="Correo" size="67"required></td>
                         </tr>
                         <tr>
-                            <td><label for="EstadoCivil" class="tl">Estado Civil:</label></td>
+                            <td><label for="Telefono" class="tl">Teléfono: *</label></td>
+                            <td><input type="tel" name="Telefono" maxlength="15" size="67" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="EstadoCivil" class="tl" >Estado Civil:</label></td>
                             <td>
                                 <select name="EstadoCivil">
                                     <option value="Soltero">Soltero</option>
@@ -66,10 +70,6 @@
                                     <option value="Divorciado">Divorciado</option>
                                 </select>
                             </td>
-                        </tr>
-                        <tr>
-                            <td><label for="Telefono" class="tl">Teléfono: *</label></td>
-                            <td><input type="tel" name="Telefono" maxlength="15"  required></td>
                         </tr>
                         <tr>
                             <td><label class="tl">Disponibilidad: </label></td>
@@ -106,8 +106,7 @@
                                 <div id="capcha">
                                     <label for="codigoInput">Capcha: <img id="cap" src="./Imagenes/capcha.png"></label>
                                     <input id="codigoInput" placeholder="Escribe el codigo de arriba">
-                                    <script src="javaRegistro.js"></script>
-
+                                    <script src="./js/javaRegistro.js"></script>
                                 </div>
                             </td>
                         </tr>
@@ -121,13 +120,11 @@
                         </tr>
                         <tr>
                         
-                            <td><b>(Obligatorios los *)</b></td>
+                            <td style=" text-align:right;"><b>(Obligatorios los *)</b></td>
                         </tr>
                     </table>
                 </form>
             </div>
-            
-        </center>
     </main>
 
     <!-- Pie de página con datos de autor/es, enlace al IES Villablanca y contacto -->

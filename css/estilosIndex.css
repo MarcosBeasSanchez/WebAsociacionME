@@ -12,7 +12,19 @@
            
             margin: 0;
             padding: 0;
+            background-image: url(../Imagenes/patron.jpg);
+  
         }
+        body::after {
+            content: "";
+            background: rgba(255, 255, 255, 0.95); 
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }  
 
         header {
             background-color: #4059b9;
@@ -40,8 +52,254 @@
             color: #4059b9;
         }
 
-        main{
+       .imagenFondo img{
+        position: relative;
+        z-index: 1;
+        height: auto;
+        width: 100%;
+        
+       }
+       
+        .container1{
+            background-color:rgba(0, 0, 0, 0.555); 
+            border-radius: 5px;
+            position: absolute;
+            width: 50%;
+            padding: 20 px;
+            margin: 20px;
+            text-align:justify ;
+            z-index: 2;
+            color: white;
+        }
+        .container1 p{
+         font-size: 11pt;
+         color: white
+        }
+        .container1 h1{
+            color: white;
+        }
+
+        .container2{
+            display: flex;
             padding: 20px;
+            width: 100% ;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+        }
+        
+        .columnas{
+            background-color: rgb(238, 238, 238);
+            border-radius: 5px;
+            width: 350px;
+            height: 600px;
+            display: inline-block;
+            margin: 25px;
+            position: relative;
+        }
+
+        .columnas img{
+            margin: auto;
+            display: block;
+            border-radius: 5px;
+            transition: transform 0.15s ease-in-out;
+        }
+        .columnas .textosReseñas img:hover {
+        transform: scale(1.1);
+        }
+
+        .containerTrailer{
+            
+            height: 1100px;
+            width: 100%;   
+        }
+
+        .media{
+            height: 800px;
+            width: 100%;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            background-color:rgba(193, 206, 252, 0.6);
+        }
+        .mediabox1{
+            height: 750px;
+            width: 1000px;
+            padding:20px;
+        }
+        .titulo{
+            display:inline-block;
+            width: 950px;
+        }
+        .titulo p{
+            font-size: 10pt;
+            display: block;
+        }
+        
+        .imagenlogo{
+            display: inline;
+        }
+
+        .videoytexto{
+            display: flex;
+            padding-top: 35px;
+            padding-left: 20px;
+        }
+        .videoytexto h4{
+            padding-left: 20px;
+            padding-right: 20px ;
+        }
+
+        .mediabox2 {
+            width: 450px;
+            height: 750px;
+            margin-left: 50px;
+        }
+        .textosReseñas{
+            margin: 10px;
+        }
+
+        .textosReseñas p{
+           
+            font-size: 10pt;    
+            text-align:left;  
+            position: relative;      
+        }
+
+        .enlaceDerecha{
+            font-size: small;
+            text-align: right;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            margin: 10px;
+        }
+        .containerCalendario{
+            display: block;
+            margin: 40px;
+        }
+
+        .containerCalendario .tabla {
+            margin-left: 140px;
+            margin-right: 140px;
+        }
+
+        table {
+            width: 100%;
+            height: 100px;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: rgb(250, 250, 250);
+           
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+            font-weight:400;
+            height: 100px;
+            width: 14.28%; 
+    
+        }
+
+        td{
+            color: #ff9090;
+            text-align: left;
+            vertical-align: bottom;
+        }
+
+        th {
+            background-color: #b4c3ff;
+        }
+
+        .Proxmes{
+            background-color:rgb(245, 245, 245);
+        }
+
+        #formularioFecha{
+           margin: auto;
+        }
+
+        .formulario{
+            margin: 50px;
+        }
+
+        #formularioFecha {
+            text-align: center;
+            font-family:'Poppins', sans-serif;
+            margin-top: 20px;
+        }
+        #formularioFecha input{
+            font-family: 'Poppins', sans-serif;
+            font-size:medium;
+            font-weight:500;
+            cursor: pointer;
+            border:none;
+            background: #dfe9ff;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        #formularioFecha input:hover{
+            font-family: 'Poppins', sans-serif;
+            font-size:medium;
+            font-weight:500;
+            cursor: pointer;
+            border: none;
+            background: #c1cefc;
+            color: rgb(0, 0, 0);
+        }
+
+        
+        #volverarriba{
+            background-color:#f2f2f2;
+            display: flex;
+            margin: auto;
+            height: 90px;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        #volverarriba img {
+            transition: transform 0.3s ease-in-out;
+            rotate:90deg;
+        }
+        #volverarriba img:hover {
+            transform: scale(1.15);
+        }
+
+        #volverArribaFixed{
+            padding-right: 50px;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            z-index: 0;   
+        }
+
+        #volverArribaFixed img {
+            transition: transform 0.3s ease-in-out;
+            rotate:90deg;
+        }
+
+        #volverArribaFixed img:hover{
+            transform: scale(1.15);
+        }
+
+
+        #titulo{
+            padding: 30px;
+            margin: 0;
+        }
+        #subtitulo{
+            padding: 30px;
+            margin: 0;
+            color: #4059b9;;
+            text-align: center;
         }
 
         footer {
@@ -50,21 +308,22 @@
             color: white;
             text-align: right;
             padding: 20px;
-            position: absolute;
             bottom: 0;
             width: 100%;
+            z-index: 1;
+            position: relative;
         }
         footer a {
             color: #5372f0;
             text-decoration: none;
         }
+
         
          footer a:hover {
-            color: white; /* Cambia este valor cuando el mouse está sobre el enlace */
-            
+            color: white;   
         }
 
         footer a:visited {
-            color: #93a5ee; /* Cambia este valor para enlaces visitados */
+            color: #93a5ee;
             
         }

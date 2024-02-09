@@ -9,10 +9,31 @@ html{
 }
 
 body {
-   
+           
     margin: 0;
     padding: 0;
+    background-image: url(../Imagenes/patron.jpg);
+
 }
+
+#entrada{
+    padding: 20px;
+}
+
+h2 {
+    margin-top: 50px;
+    padding-left: 20px;
+}
+body::after {
+    content: "";
+    background: rgba(255, 255, 255, 0.95); 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}  
 
 header {
     background-color: #4059b9;
@@ -41,7 +62,59 @@ nav a:hover {
 }
 
 main{
-    padding: 20px;
+    padding: 0px;
+}
+
+section img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .5;
+    transition: .5 ease;
+}
+
+#imgSection{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    background-color:rgba(193, 206, 252, 0.6);
+}
+
+section {
+   
+    display: flex;
+    width: 100%;
+    height: 430px;
+    
+}
+
+section :hover {
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+#parrafo {
+    display: flex;
+    width: 1500px;
+}
+
+#imagenesParrafo {
+    display: block;
+    width: 722.3px;
+}
+
+#imagenResenia {
+    height: 307px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#parrafo p {
+    width: 900px;
+    margin-left: 50px;
 }
 
 footer {
@@ -50,7 +123,6 @@ footer {
     color: white;
     text-align: right;
     padding: 20px;
-    position: absolute;
     bottom: 0;
     width: 100%;
 }
