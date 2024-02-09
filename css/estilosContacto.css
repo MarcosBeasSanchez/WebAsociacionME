@@ -12,7 +12,18 @@ body {
    
     margin: 0;
     padding: 0;
+    background-image: url(../Imagenes/patron.jpg);
 }
+body::after {
+    content: "";
+    background: rgba(255, 255, 255, 0.95); 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}  
 
 header {
     background-color: #4059b9;
@@ -41,29 +52,31 @@ nav a:hover {
 }
 
 main{
-    padding: 20px;
+    padding: 50px;
 }
 
 .foto {
-    width: 650px;
+    width: 600px;
     height: 400px;
-    margin-left: 25px;
+    margin-left: 40px;
 }
 
 .logoLinkedin {
     width: 25px;
     height: 25px;
     margin-left: 25px;
-    margin-top: 16px;
 }
 
 .correoPersonal {
     margin-left: 15px;
-    margin-top: 16px;
 }
 
 #nombre {
     display: flex;
+}
+
+#nombre p{
+   margin: 0px;
 }
 
 #formu{
@@ -76,8 +89,12 @@ main{
     margin-top: 30px;
     box-shadow: 10px 10px 10px #ddd;
     background-color: #f2f2f2;
-    width: 500px;
-    height: auto;
+    width: 100%;
+    height: 250px;
+}
+
+table{
+    width: 800px;
 }
 
 #botones{
@@ -105,3 +122,18 @@ footer a {
 footer a:visited {
     color: #93a5ee; /* Cambia este valor para enlaces visitados */
 }
+
+
+
+a {
+    color: #5372f0;
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(109, 109, 109); /* Cambia este valor cuando el mouse está sobre el enlace */
+}
+
+
+
+
