@@ -9,7 +9,6 @@ html{
 }
 
 body {
-   
     margin: 0;
     padding: 0;
 }
@@ -42,7 +41,123 @@ nav a:hover {
 
 main{
     padding: 20px;
+    width: 100%;
+    height: 1300px;
 }
+
+h3 {
+    text-align: center;
+    font-size: 24px;
+}
+
+#medio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    margin: auto;
+}
+
+#medio > #text {
+    display: block;
+    background-color: #5D83D4;
+    width: 900px;
+    height: 600px;
+    margin: 5px;
+
+}
+
+#medio > #text > h4{
+    padding-left: 10px;
+    font-size: 22px;
+}
+
+#medio > #text > p{
+    font-size: 17px;
+    padding-left: 10px;
+}
+
+#medio > #imagen {
+    display: block;
+    background-color: #5D83D4;
+    width: 900px;
+    height: 600px;
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+#medio > #imagen > img{
+    margin: 5px;
+    width: 890px;
+    height: 590px;
+}
+
+hr{
+    margin-block-start: 0.0em;
+    margin-block-end: 0.0em;
+    border: 1px dashed white;
+}
+
+#nosotros{
+    display: flex;
+    flex-wrap: nowrap;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#nosotros > .persona{
+    display: inline;
+    width: 550px;
+    height: 480px;
+    background-color: #ddd;
+    margin: 40px;
+    margin-top: 100px;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+#nosotros > .persona > img{
+    width: 550px;
+    height: 300px;
+    padding: 5px;
+}
+
+#nosotros > .persona > h4{
+    margin: 0;
+}
+
+.persona {
+    opacity: 0; 
+    transform: translateY(20px); 
+    transition: opacity 0.8s, transform 0.8s;
+}
+
+.persona.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+ul{
+    padding-right: 40px;
+    padding-top: 25px;
+}
+
+li{
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.logo > img{
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+}
+
 
 footer {
     font-size: 10pt;
@@ -50,7 +165,6 @@ footer {
     color: white;
     text-align: right;
     padding: 20px;
-    position: absolute;
     bottom: 0;
     width: 100%;
 }

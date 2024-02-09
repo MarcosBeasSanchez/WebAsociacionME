@@ -51,13 +51,19 @@ main{
     margin: auto;
     border: 2px;
     padding-top: 10px;
-    font-size: 16px;
+    font-size: 15px;
     margin-left: 50%;
-    margin-top: 30px;
+    margin-top: 25px;
     box-shadow: 10px 10px 10px #ddd;
     background-color: #f2f2f2;
     width: 1000px;
     height: auto;
+    transition: all 0.8s ease;
+}
+
+#formu:hover{
+    transition: all 0.6s ease;
+    filter: brightness(92%);
 }
 
 #botones{
@@ -68,6 +74,22 @@ main{
 .tl{
     padding-right: 10px;
     width: 1px;
+}
+
+#capcha{
+    text-align: center;
+    align-items: center;
+    background-color: white;
+    width: 220px;
+    height: 50px;
+    margin-left: 33%;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+#cap{
+    width: 20px;
+    height: auto;
 }
 
 b{
@@ -98,3 +120,4 @@ footer a:visited {
     color: #93a5ee; /* Cambia este valor para enlaces visitados */
     
 }
+

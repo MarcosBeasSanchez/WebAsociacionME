@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <!-- CREADOR/ES-->
     <meta name="MarcosBeasSanchez" content="MarcosBeasSanchez">
-    <meta name="Index" content="Pagina principal de Games ME">
-    <title>Index</title>
+    <meta name="REgistro" content="Pagina de registro de Games ME">
+    <title>GAMING ME - Registro</title>
     <!-- ICONO SUPERIOR DE LA WEB-->
     <link rel="icon" href="./Imagenes/iconoGamesME.ico" type="image/x-icon">
     <!-- APARTADO PARA LA FUENTE POPPINS-->
@@ -39,7 +39,7 @@
     <main>
         <center>
             <div id="formu">
-                <form action="admin@asociacion.org" method="post" target="_blank">
+                <form action="MAILTO:admin@asociacion.org" method="post" onsubmit="return mostrarInformacion() && verificarCodigo()">
                     <table>
                         <tr>
                             <td class="tl"><label for="Nombre">Nombre: *</label></td>
@@ -69,7 +69,7 @@
                         </tr>
                         <tr>
                             <td><label for="Telefono" class="tl">Teléfono: *</label></td>
-                            <td><input type="tel" name="Telefono" maxlength="15" required></td>
+                            <td><input type="tel" name="Telefono" maxlength="15"  required></td>
                         </tr>
                         <tr>
                             <td><label class="tl">Disponibilidad: </label></td>
@@ -103,6 +103,16 @@
                         </tr>
                         <tr>
                             <td colspan="2">
+                                <div id="capcha">
+                                    <label for="codigoInput">Capcha: <img id="cap" src="./Imagenes/capcha.png"></label>
+                                    <input id="codigoInput" placeholder="Escribe el codigo de arriba">
+                                    <script src="javaRegistro.js"></script>
+
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
                                 <div id="botones">
                                     <input type="submit" value="Enviar">
                                     <input type="reset" value="Reinicio">
@@ -110,6 +120,7 @@
                             </td>
                         </tr>
                         <tr>
+                        
                             <td><b>(Obligatorios los *)</b></td>
                         </tr>
                     </table>
