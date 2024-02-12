@@ -71,31 +71,48 @@ main{
     margin-left: 15px;
 }
 
+#texto{
+    
+}
+
 #nombre {
-    display: flex;
+  
 }
 
 #nombre p{
    margin: 0px;
 }
 
+#textoYForm{
+    display: flex;
+}
+
 #formu{
-    display: block;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    margin: auto;
     border: 2px;
     padding-top: 10px;
     font-size: 16px;
-    margin-top: 30px;
+    margin: 40px;
     box-shadow: 10px 10px 10px #ddd;
     background-color: #f2f2f2;
-    width: 100%;
-    height: 250px;
+    width: 850px;
+    height: 450px
 }
 
 table{
-    width: 800px;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
+
+tr{
+   width: 100px; 
+}
+
 
 #botones{
     margin-left: 40%;

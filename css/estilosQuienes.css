@@ -55,62 +55,92 @@ nav a:hover {
 main{
     padding: 20px;
     width: 100%;
-    height: 1300px;
+    height: 1350px;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
 }
 
+#centrar{
+    padding-top: 50px;
+    margin: auto;
+}
 h3 {
     text-align: center;
     font-size: 24px;
+}
+
+#containerColor{
+    background-color:rgba(186, 201, 255, 1);
+    animation: fade 0.5s linear forwards;
+    height: 750px;
+}
+
+@keyframes fade {
+    from {
+        background-color:rgba(186, 201, 255, 0);
+    }
+    to {
+        background-color:rgba(186, 201, 255, 0.6);
+    }
 }
 
 #medio {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: auto;
+    width: 1700px;
     height: auto;
     margin: auto;
 }
 
 #medio > #text {
     display: block;
-    background-color: #5D83D4;
     width: 900px;
     height: 600px;
     margin: 5px;
+    padding-left: 50px;
+    padding-right: 50px;
 
 }
 
 #medio > #text > h4{
     padding-left: 10px;
     font-size: 22px;
+    
 }
 
 #medio > #text > p{
-    font-size: 17px;
+    font-size: 13pt; 
     padding-left: 10px;
+    margin-bottom: 20px;
 }
 
 #medio > #imagen {
     display: block;
-    background-color: #5D83D4;
     width: 900px;
     height: 600px;
-    margin: 5px;
+    position: relative;
     justify-content: center;
     align-items: center;
 }
 
 #medio > #imagen > img{
-    margin: 5px;
-    width: 890px;
-    height: 590px;
+    
+    width: 900px;
+    height: 600px;
+}
+
+@keyframes slideIn {
+    to {
+        left: 0; /* Desplaza la imagen hacia la izquierda hasta la posición inicial */
+    }
 }
 
 hr{
     margin-block-start: 0.0em;
     margin-block-end: 0.0em;
-    border: 1px dashed white;
+    border: 1px dashed rgb(93, 109, 255);
 }
 
 #nosotros{
@@ -124,20 +154,20 @@ hr{
 
 #nosotros > .persona{
     display: inline;
-    width: 550px;
+    width: 450px;
     height: 480px;
-    background-color: #ddd;
+    background-color: #f2f2f2;
     margin: 40px;
-    margin-top: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     text-align: center;
-    border: 1px solid;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 #nosotros > .persona > img{
-    width: 550px;
+    width: 450px;
     height: 300px;
-    padding: 5px;
+    border-radius: 5px;
 }
 
 #nosotros > .persona > h4{
@@ -157,7 +187,8 @@ hr{
 
 ul{
     padding-right: 40px;
-    padding-top: 25px;
+    padding-top: 5px;
+   
 }
 
 li{
@@ -166,8 +197,14 @@ li{
 }
 
 .logo > img{
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+}
+
+.logo > img:hover{
+    width: 24px;
+    height: 24px;
     border-radius: 5px;
 }
 
