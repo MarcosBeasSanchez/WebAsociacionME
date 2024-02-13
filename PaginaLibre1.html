@@ -17,6 +17,7 @@
     <!-- Estilos CSS para el INDEX -->
     <link  rel="stylesheet" href="css/estilosLibre.css">
     <script src="./js/animacion2"></script>
+    <script src="./js/GotoID"></script>
     
 </head>
 <body>
@@ -30,7 +31,7 @@
 
     <!-- Menú de navegación -->
     <nav>
-        <a href="Registo.html">REGISTO</a>
+        <a href="Registo.html">REGISTRO</a>
         <a href="Contacto.html">CONTACTO</a>
         <a href="QuienesSomos.html">¿QUIENES SOMOS?</a>
     
@@ -45,15 +46,15 @@
     </div>
     <div id="imgSection">
         <section>
-            <img src="./Imagenes/suicidesquad.jpg" alt="Portada de Suicide Squad: Kill the justice league">
-            <img src="./Imagenes/Silent-Hill.jpg" alt="Portada de Silent Hill: The short message">
-            <img src="./Imagenes/EldenRing.jpg" alt="Portada de Elden Ring">
-            <img src="./Imagenes/StarField.jpeg" alt="Portada de Starfield">
-            <img src="./Imagenes/gta6.jpg" alt="Portada de Grand Theft Auto VI">
+            <img src="./Imagenes/suicidesquad.jpg" alt="Portada de Suicide Squad: Kill the justice league" class="imagen-clickeable" data-destino="destino1">
+            <img src="./Imagenes/Silent-Hill.jpg" alt="Portada de Silent Hill: The short message" class="imagen-clickeable" data-destino="destino2">
+             <img src="./Imagenes/EldenRing.jpg" alt="Portada de Elden Ring"  class="imagen-clickeable" data-destino="destino3">
+            <img src="./Imagenes/StarField.jpeg" alt="Portada de Starfield" class="imagen-clickeable" data-destino="destino4">
+            <img src="./Imagenes/gta6.jpg" alt="Portada de Grand Theft Auto VI" class="imagen-clickeable" data-destino="destino5">
         </section>
     </div>
 
-        <h2>Suicide Squad: Kill the justice league</h2>
+        <h2 id="destino1">Suicide Squad: Kill the justice league</h2>
         
         <div id="parrafo">
             <p>Suicide Squad: Kill the Justice League no solo es un buen juego de disparos en tercera persona: es un shooter original en sus mecánicas, divertidísimo y frenético. Tampoco es solo un juego con una historia entretenida: sus personajes son memorables y la trama está repleta de momentazos. Pero también es un juego como servicio, un título que tiene la pretensión de que juguemos durante meses o años, o al menos, que volvamos a él de vez en cuando. ¿Ha conseguido Rocksteady, los creadores de Batman: Arkham, encajar estos elementos aparentemente contrapuestos? Es decir, ¿el título logra apelar tanto al público de las aventuras de acción narrativas como al de los looter shooters? Eso es lo que intentaremos dejar claro en el siguiente análisis. 
@@ -71,7 +72,7 @@
             </div>
         </div>
             
-        <h2 class="h2derecha">Silent Hill: The short message</h2>
+        <h2  id="destino2" class="h2derecha">Silent Hill: The short message</h2>
         
         <div id="parrafoPar">
             <p>Silent Hill: The Short Message nos recuerda inevitablemente a P.T.. Es un walking simulator en primera persona que nos lleva a un bloque de apartamentos abandonado en el que tenemos que dar varias «vueltas» hasta descubrir el final. Además, es gratuito y sirve para promocionar el retorno de la saga. Aquí no hay ninguna conexión explícita con otros juegos de la saga más allá de algún guiño que otro, pero sí que es posible que tengamos pistas sobre la historia de Silent Hill.
@@ -89,7 +90,7 @@
             </div>
         </div>
             
-        <h2>Elden Ring</h2>
+        <h2 id="destino3">Elden Ring</h2>
         
         <div id="parrafo">
             <p>A lo largo de nuestras vidas, siempre hay cosas que nos marcan. En el caso de los videojuegos, muchas veces no somos plenamente conscientes de ello, no al menos durante el primer contacto, pero sí que existe una sensación muy especial y difícil de describir, un "algo", que sin que lo sepamos, nos dice que estamos jugando a algo único que poco a poco se dispone a dejar una huella imborrable en nosotros.
@@ -108,7 +109,7 @@
             </div>
         </div>
             
-        <h2 class="h2derecha">Starfield</h2>
+        <h2 id="destino4" class="h2derecha">Starfield</h2>
         
         <div id="parrafoPar">
             <p>IP de Bethesda Game Studios es un evento especial, significativo. No es habitual que los creadores de The Elder Scrolls y la corriente moderna de Fallout inicien un nuevo camino alejado de sus grandes marcas. Parece que ha pasado toda una vida desde la revelación de Starfield, cuando el E3 era el centro del videojuego durante unos días y el futuro se cimentaba a golpe de teaser. Por el camino se han publicado multitud de promesas, retrasado un par de veces en pos de su estabilidad y campañas de todo tipo que elevaban las expectativas. El ecosistema Xbox estaba (y está) necesitado de grandes golpes en la mesa en materia first party.
@@ -125,7 +126,7 @@
             </div>
         </div>
             
-        <h2>Grand Theft Auto VI</h2>
+        <h2 id="destino5">Grand Theft Auto VI</h2>
         
         <div id="parrafo">
             <p>'GTA VI' está en su fase final de desarrollo. Y aunque Rockstar no ha dado más detalles sobre fechas muy concretas, estado del proyecto y demás cuestiones, el hype está en el aire. Cada vez que se filtra algún dato o posible cuestión técnica sobre el futuro juego, internet arde, los trending topics se disparan y los jugadores se preguntan si esta nueva entrega supondrá una revolución de la industria como lo supusieron todas los demás
@@ -145,6 +146,10 @@
                 </div>
             </div>
         </div>
+
+        <div id="volverarriba">
+            <a href="#"><img src="./Imagenes/volverarriba.png" alt="VolverArriba Flecha" width="50"></a>
+    </div>
     </main>
 
     <!-- Pie de página con datos de autor/es, enlace al IES Villablanca y contacto -->

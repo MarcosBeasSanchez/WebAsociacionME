@@ -38,6 +38,15 @@ header {
     text-align: center;
 }
 
+header img{
+    transition: transform 0.3s ease;
+
+}
+
+header img:hover{
+    transform: scale(1.1);
+}
+
 nav {
     background-color: #f2f2f2;
     padding: 10px;
@@ -63,6 +72,25 @@ main{
 
 }
 
+#formularioFecha input{
+    font-family: 'Poppins', sans-serif;
+    font-size:medium;
+    font-weight:500;
+    cursor: pointer;
+    border:none;
+    background: #dfe9ff;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#formularioFecha input:hover{
+    font-family: 'Poppins', sans-serif;
+    font-size:medium;
+    font-weight:500;
+    cursor: pointer;
+    border: none;
+    background: #c1cefc;
+    color: rgb(0, 0, 0);
+}
 #formu{
     display: block;
     justify-content: center;

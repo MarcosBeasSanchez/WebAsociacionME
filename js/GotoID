@@ -1,0 +1,21 @@
+document.addEventListener('DOMContentLoaded', function () {
+    // Obtener todas las imágenes dentro del section
+    const imagenesSection = document.querySelectorAll('#imgSection section img');
+
+    // Iterar sobre cada imagen dentro del section
+    imagenesSection.forEach(function (imagen) {
+        // Agregar un event listener para el evento 'click' a cada imagen
+        imagen.addEventListener('click', function () {
+            // Obtener el valor del atributo 'data-destino' de la imagen clickeable
+            const destinoId = imagen.getAttribute('data-destino');
+
+            // Obtener el elemento del destino
+            const destino = document.getElementById(destinoId);
+
+            // Desplazarse hasta el elemento de destino
+            destino.scrollIntoView({
+                behavior: 'smooth' // Desplazamiento suave
+            });
+        });
+    });
+});

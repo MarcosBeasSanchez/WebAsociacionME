@@ -31,6 +31,16 @@
             color: white;
             padding: 20px;
             text-align: center;
+           
+        }
+
+        header img{
+            transition: transform 0.3s ease;
+
+        }
+
+        header img:hover{
+            transform: scale(1.1);
         }
 
         nav {
@@ -259,6 +269,8 @@
             height: 90px;
             justify-content: center;
             align-items: center;
+            z-index: 1;
+            position: relative;
             
         }
         #volverarriba img {
