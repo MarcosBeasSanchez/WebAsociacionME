@@ -64,23 +64,12 @@ main{
 .logoLinkedin {
     width: 25px;
     height: 25px;
-    margin-left: 25px;
-}
-
-.correoPersonal {
-    margin-left: 15px;
-}
-
-#texto{
     
 }
 
-#nombre {
-  
-}
-
-#nombre p{
-   margin: 0px;
+.correoPersonal {
+    margin-left: 5px;
+ 
 }
 
 #textoYForm{
@@ -113,6 +102,13 @@ tr{
    width: 100px; 
 }
 
+.containerimg{
+    margin-top: 20px;
+}
+
+.containerimg img{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* sombra */
+}
 
 #botones{
     margin-left: 40%;

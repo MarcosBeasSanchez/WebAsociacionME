@@ -8,6 +8,11 @@ html{
     font-style: normal;
 }
 
+h2{
+    text-align: center;
+    margin-top: 50px;
+}
+
 body {
            
     margin: 0;
@@ -62,6 +67,7 @@ main{
     display: block;
     justify-content: center;
     margin: auto;
+    margin-top: 5px;
     border: 2px;
     padding-top: 10px;
     font-size: 15px;

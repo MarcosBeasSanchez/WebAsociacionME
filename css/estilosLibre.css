@@ -17,12 +17,22 @@ body {
 }
 
 #entrada{
-    padding: 20px;
+   padding: 1px;
+    background-color:rgba(193, 206, 252, 0.6);
 }
+
+#entrada h2{
+    text-align: center;
+}
+
+#entrada p{
+    text-align: center;
+}
+
 
 h2 {
     margin-top: 50px;
-    padding-left: 20px;
+    padding-left: 50px;
 }
 body::after {
     content: "";
@@ -90,6 +100,13 @@ section {
     
 }
 
+hr{
+    border: solid 1px #768aff;
+}
+
+.h2derecha{
+    margin-right: 50px;
+}
 section :hover {
     width: 300px;
     opacity: 1;
@@ -98,24 +115,52 @@ section :hover {
 
 #parrafo {
     display: flex;
-    width: 1500px;
+    width: 100%;
+    justify-content: center;
 }
 
 #imagenesParrafo {
     display: block;
-    width: 722.3px;
+    margin-right: 50px;
+    margin-left: 50px;
 }
 
 #imagenResenia {
-    height: 307px;
+    width: 1000px;
     margin-left: 20px;
     margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* sombra */
 }
 
 #parrafo p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 900px;
     margin-left: 50px;
+    margin-right: 50px;
+    font-size: 11pt;
+    
 }
+
+#parrafoPar {
+    flex-direction: row-reverse;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align:start
+}
+
+#parrafoPar p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 900px;
+    margin-left: 50px;
+    margin-right: 50px;
+     font-size: 11pt;
+}
+
 
 footer {
     font-size: 10pt;
@@ -125,6 +170,7 @@ footer {
     padding: 20px;
     bottom: 0;
     width: 100%;
+    margin-top: 100px;
 }
 footer a {
     color: #5372f0;
