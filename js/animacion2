@@ -1,0 +1,38 @@
+document.addEventListener('DOMContentLoaded', function() {
+    const sliders = document.querySelectorAll('.slider'); // Selecciona todos los sliders en la página
+    
+    sliders.forEach(slider => {
+      const slides = slider.querySelectorAll('.slides img'); // Selecciona las imágenes dentro del slider actual
+      let slideIndex = 0;
+      const totalSlides = slides.length;
+  
+      // Función para mostrar un slide específico
+      function showSlide(index) {
+        slides.forEach((slide, i) => {
+          if (i === index) {
+            slide.style.display = 'block';
+          } else {
+            slide.style.display = 'none';
+          }
+        });
+      }
+  
+      // Función para avanzar al siguiente slide
+      function nextSlide() {
+        slideIndex = (slideIndex + 1) % totalSlides;
+        showSlide(slideIndex);
+      }
+  
+      // Agrega un event listener a cada imagen del slider actual para avanzar al siguiente slide al hacer clic
+      slides.forEach((slide, index) => {
+        slide.addEventListener('click', function() {
+          nextSlide();
+        });
+      });
+  
+      // Mostrar el primer slide del slider actual al cargar la página
+      showSlide(slideIndex);
+
+    });
+  });
+  
