@@ -31,6 +31,7 @@
             color: white;
             padding: 20px;
             text-align: center;
+            
            
         }
 
@@ -165,6 +166,10 @@
             width: 450px;
             height: 750px;
             margin-left: 50px;
+            display:flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
         }
         .textosReseñas{
             margin: 10px;
@@ -173,7 +178,7 @@
         .textosReseñas p{
            
             font-size: 10pt;    
-            text-align:left;  
+            text-align:start;  
             position: relative;      
         }
 

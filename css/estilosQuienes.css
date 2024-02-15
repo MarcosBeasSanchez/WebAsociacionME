@@ -119,10 +119,9 @@ h3 {
     
 }
 
-#medio > #text > p{
+#medio #text  p{
     font-size: 12pt; 
-    
-    
+    text-align: justify;
 }
 
 #medio > #imagen {
